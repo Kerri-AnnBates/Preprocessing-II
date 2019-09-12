@@ -1,8 +1,9 @@
 // Mixins in here
-.displayFlex(@justify, @align) {
+.displayFlex(@justify:flex-start, @align:stretch, @flex-direction:row) {
     display: flex;
     justify-content: @justify;
     align-items: @align;
+    flex-direction: @flex-direction;
 }
 
 .primary-button(@bg-color, @font-color) {
@@ -17,5 +18,11 @@
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+.mobile-full-width {
+    @media @mobile {
+        width: 100%;
     }
 }

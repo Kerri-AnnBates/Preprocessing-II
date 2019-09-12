@@ -5,10 +5,19 @@ header {
 
     .content {
         .displayFlex(space-between, flex-end);
+
+        @media @mobile {
+            .displayFlex(space-between, flex-end, column);
+            text-align: center;
+        }
     } // End of content
 
     .logo {
         width: 100%;
+
+        @media @mobile {
+            margin-bottom: 10px;
+        }
     }
 
     nav {
