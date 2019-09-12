@@ -1,3 +1,6 @@
+.section-border {
+  border-bottom: 2px dashed grey;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +162,10 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -167,6 +174,29 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+header {
+  padding: 3rem 0;
+  border-bottom: 2px dashed grey;
+}
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+header .logo {
+  width: 100%;
+}
+header nav {
+  width: 100%;
+}
+header nav a {
+  color: black;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 .footer {
   width: 100%;
