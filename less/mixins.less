@@ -4,3 +4,18 @@
     justify-content: @justify;
     align-items: @align;
 }
+
+.primary-button(@bg-color, @font-color) {
+    background: @bg-color;
+    color: @font-color;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid @silver;
+    border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
