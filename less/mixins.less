@@ -1,1 +1,28 @@
 // Mixins in here
+.displayFlex(@justify:flex-start, @align:stretch, @flex-direction:row) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @flex-direction;
+}
+
+.primary-button(@bg-color, @font-color) {
+    background: @bg-color;
+    color: @font-color;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid @silver;
+    border-radius: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.mobile-full-width {
+    @media @mobile {
+        width: 100%;
+    }
+}
